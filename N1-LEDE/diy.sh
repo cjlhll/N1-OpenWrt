@@ -11,10 +11,10 @@ function git_sparse_clone() {
 
 # Add packages
 #添加科学上网源
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
-git clone --single-branch --depth 1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-git clone --single-branch --depth 1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
+#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+#git clone --single-branch --depth 1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+#git clone --single-branch --depth 1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 #添加自定义的软件包源
 #git_sparse_clone main https://github.com/kiddin9/kwrt-packages ddns-go
