@@ -155,7 +155,7 @@ jobs:
         KERNEL_VERSION_NAME: 5.15.148
         KERNEL_AUTO_LATEST: false
         PACKAGE_SOC: s905d
-        WHOAMI: fightroad
+        WHOAMI: caojian
         SW_FLOWOFFLOAD: 1
         SFE_FLOW: 0
        
@@ -171,9 +171,9 @@ jobs:
           基于lean openwrt构建
           首次使用建议全新刷写
           * 基本信息
-          IP: 192.168.2.2
+          IP: 192.168.5.2
           账户: root
-          密码: password
+          密码: cj1992728
           
     - name: Delete old releases
       uses: dev-drprasad/delete-older-releases@master
