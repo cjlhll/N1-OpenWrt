@@ -9,23 +9,15 @@ function git_sparse_clone() {
   cd .. && rm -rf $repodir
 }
 
-# Add packages
-#添加科学上网源
-#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
-#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
-#git clone --single-branch --depth 1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-#git clone --single-branch --depth 1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
-
 #添加自定义的软件包源
 #git_sparse_clone main https://github.com/kiddin9/kwrt-packages ddns-go
 #git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-ddns-go
+
 # Remove packages
 #删除lean库中的插件，使用自定义源中的包。
-#rm -rf feeds/packages/net/v2ray-geodata
 rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-argon-config
 rm -rf feeds/packages/net/mosdns
-#rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/luci/applications/luci-app-mosdns
 #rm -rf feeds/luci/themes/luci-theme-design
 #rm -rf feeds/luci/applications/luci-app-design-config
@@ -37,8 +29,8 @@ sed -i 's/192.168.1.1/192.168.5.2/g' package/base-files/files/bin/config_generat
 sed -i 's/^root:.*:/root:$1$KVHNuqbv$4X2BPbtsXn2AApknHIn38.:0:0:99999:7:::/g' package/base-files/files/etc/shadow
 
 # => alist
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+#rm -rf feeds/packages/lang/golang
+#git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
 git clone https://github.com/sbwml/luci-app-alist package/alist
 
 # => 阿里ddns
