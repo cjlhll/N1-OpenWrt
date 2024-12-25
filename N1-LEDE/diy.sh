@@ -37,6 +37,7 @@ git clone https://github.com/sbwml/luci-app-alist package/alist
 git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-aliddns
 
 # => mihomo
+rm -rf feeds/packages/net/{chinadns*,hysteria,geoview,trojan*,xray*,v2ray*,sing*}
 git clone https://github.com/morytyann/OpenWrt-mihomo package/mihomo
 
 #修改默认时间格式
