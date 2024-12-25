@@ -38,6 +38,7 @@ git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-alidd
 
 # => mihomo
 git clone https://github.com/morytyann/OpenWrt-mihomo package/mihomo
+echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"
 
 #修改默认时间格式
 sed -i 's/os.date()/os.date("%Y-%m-%d %H:%M:%S %A")/g' $(find ./package/*/autocore/files/ -type f -name "index.htm")
