@@ -21,11 +21,11 @@ function git_sparse_clone() {
 #git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-ddns-go
 # Remove packages
 #删除lean库中的插件，使用自定义源中的包。
-rm -rf feeds/packages/net/v2ray-geodata
+#rm -rf feeds/packages/net/v2ray-geodata
 rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-argon-config
 rm -rf feeds/packages/net/mosdns
-rm -rf feeds/packages/utils/v2dat
+#rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/luci/applications/luci-app-mosdns
 #rm -rf feeds/luci/themes/luci-theme-design
 #rm -rf feeds/luci/applications/luci-app-design-config
