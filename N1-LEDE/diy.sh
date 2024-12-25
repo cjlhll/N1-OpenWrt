@@ -36,8 +36,8 @@ git clone https://github.com/sbwml/luci-app-alist package/alist
 # => 阿里ddns
 git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-aliddns
 
-# => openclash
-git clone https://github.com/vernesong/OpenClash.git --depth 1 package/openclash
+# => mihomo
+git clone https://github.com/morytyann/OpenWrt-mihomo package/mihomo
 
 #修改默认时间格式
 sed -i 's/os.date()/os.date("%Y-%m-%d %H:%M:%S %A")/g' $(find ./package/*/autocore/files/ -type f -name "index.htm")
